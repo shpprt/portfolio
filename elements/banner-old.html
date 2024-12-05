@@ -1,0 +1,74 @@
+<div class="title-container">
+    <h1 class="title">David</h1>
+    <h1 class="title">Shuppert</h1>
+    <div class="subtitle"></div>
+</div>
+<script>
+
+// Create and position floating elements
+const positions = [
+  { left: 600, top: 500, width: 2900, height: 900, backgroundImage: '02'  },
+  { left: 600, top: 500, width: 2900, height: 900, backgroundImage: '07'  },
+  { left: 600, top: 500, width: 2900, height: 900, backgroundImage: '04'  },
+  { left: 600, top: 500, width: 2900, height: 900, backgroundImage: '06'  },
+  { left: 600, top: 500, width: 2900, height: 900, backgroundImage: '08'  },
+  { left: 600, top: 500, width: 2900, height: 900, backgroundImage: '03'  },
+  { left: 600, top: 500, width: 2900, height: 900, backgroundImage: '05'  },
+  { left: 200, top: 300, width: 200, height: 200, backgroundImage: '09' },  
+  { left: 450, top: 100, width: 700, height: 1800, backgroundImage: '01' },
+  { left: -500, top: 650, width: 200, height: 200, backgroundImage: '09' },  
+  { left: 500, top: 90, width: 200, height: 200, backgroundImage: '09' },
+  { left: 620, top: 650, width: 200, height: 200, backgroundImage: '09' },
+];
+
+
+const banner = document.querySelector('.banner');
+
+positions.forEach((pos, index) => {
+    const element = document.createElement('div');
+    element.className = 'floating-element';
+    Object.assign(element.style, {
+    left:'calc(47% - ' + pos.left + 'px)',
+    top: pos.top + 'px',
+    width: Math.round(parseFloat(pos.width) / 2.25) + 'px',
+    height: Math.round(parseFloat(pos.height) / 2.25) + 'px',
+    backgroundImage: 'url("/portfolio/assetsWeb/banner' + pos.backgroundImage + '.png")',
+    backgroundSize: 'cover',
+    animation: `fadeSlideUp 0.8s ease-out ${index * 0.1}s forwards`
+    });
+    banner.appendChild(element);
+});
+
+// Strings to cycle through
+const strings = [
+  "Animation",
+  "Motion Design",
+  "Graphic Design",
+  "Illustration",
+];
+
+const subtitleDiv = document.querySelector(".subtitle");
+let index = 0;
+
+// Function to update the text with animation
+function updateText() {
+  // Clear the current content
+  subtitleDiv.innerHTML = "";
+
+  // Create a span element for the new text
+  const span = document.createElement("span");
+  span.textContent = strings[index];
+  subtitleDiv.appendChild(span);
+
+  // Update the index for the next string
+  index = (index + 1) % strings.length;
+
+  // Set a timeout to change the text after the current animation ends
+  setTimeout(updateText, 2000); // 4s: 2s slide-in + 2s slide-out
+}
+
+// Start the cycle
+updateText();
+
+
+</script>

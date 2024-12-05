@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/portfolio/main.css">
+    <title>David Shuppert</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Suez+One">
+
+    <script src="/portfolio/javascript.js"></script>
+    <script type = "text/javascript" src = "https://www.tutorialspoint.com/jquery/jquery-3.6.0.js"></script>
+    <script> 
+    $(function(){
+      $(".nav-container").load("/portfolio/elements/nav.html"); 
+    });
+    $(function(){
+      $("#footer").load("/portfolio/elements/footer.html"); 
+    });
+    </script>
+</head>
+<body>
+    <div class="nav-container"></div>
+    <div style="height:90px;"></div>
+    <main>
+      <div class="formBox">
+        <h1>Contact me!</h1>
+        <h2>I don't bite</h2>
+        <form action="https://api.web3forms.com/submit" method="POST">
+          
+          <input type="hidden" name="access_key" vale="6b21a84d-d4e8-4443-90df-1f0c1f11040a">
+
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <textarea name="message" placeholder="Type here..." required></textarea>
+
+          <button type="submit">Submit Form</button>
+
+        </form>
+    </div>
+    <div id="footer"></div>  
+    </main>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<div class="logo-container">
+    <a href="index.html"><img src="/portfolio/assetsWeb/logo-david.svg" alt="Logo" class="logo"></a>
+</div>
+<div class="nav-links">
+    <div class="nav-item">
+        <a href="index.html">Home</a>
+    </div>
+    <!-- <div class="nav-item">
+        <button>Work</button>
+        <div class="dropdown">
+            <button>Personal</button>
+            <button>RCCAM</button>
+            <button>Miami Marketing</button>
+            <button>Commissions</button>
+        </div>
+    </div> -->
+    <div class="nav-item">
+        <a href="about-me.html">About Me</a>
+    </div>
+    <div class="nav-item">
+        <a href="contact.html">Contact</a>
+    </div>
+</div>
+<script>
+    const nav = document.querySelector('.nav-container');
+    
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            nav.classList.add('scrolled');
+            nav.classList.remove('notscrolled');
+        } else {
+            if (nav.classList.contains('scrolled')) {
+                nav.classList.add('notscrolled');
+            }
+            nav.classList.remove('scrolled');
+        }
+    });
+</script>

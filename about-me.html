@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/portfolio/main.css">
+    <title>David Shuppert</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Suez+One">
+
+    <script type = "text/javascript" src = "https://www.tutorialspoint.com/jquery/jquery-3.6.0.js"></script>
+    <script> 
+    $(function(){
+      $(".nav-container").load("/portfolio/elements/nav.html"); 
+    });
+    $(function(){
+      $("#footer").load("/portfolio/elements/footer.html"); 
+    });
+    </script>
+    <style>
+        * {
+          --clr-white: #fafbfc;
+          --clr-acc1: #d7ecee;
+          --clr-acc2: #c1e2e3;
+          --clr-blue1: #009ea4;
+          --clr-blue2: #16647f;
+          --clr-yellow: #f0af42;
+          --clr-orange: #e16d3a;
+          --clr-black: #321f1f; 
+      }
+
+      p {
+        font-size:16px;
+      }
+
+      main {
+        display:flex;
+      }
+
+      img {
+        width:50%;
+      }
+
+      .mainn {
+        display:flex;
+        flex-direction:column;
+        gap:30px;
+        margin:100px;
+        justify-content:center;
+      }
+
+      .list-container {
+        display:flex;
+        gap:20px;
+      }
+
+      .list-container > div {
+        width:50%;
+      }
+
+      .button-container {
+        display:flex;
+        gap:50px;
+        align-items:center;
+        justify-content:center;
+      }
+
+      .button {
+        padding: 10px 15px;
+        background-color: var(--clr-orng, #f57c00);
+        width:fit-content;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      .button:hover {
+          background-color: var(--clr-yllw, #ffd600);
+          color: black;
+      }
+    </style>
+</head>
+<body>
+    <div class="nav-container"></div>
+    <div style="height:90px;"></div>
+    <main>
+      <div class="mainn">
+        <div>
+          <h3>Hi, I'm David</h3>
+          <h2>It's nice to meetchya!</h2>
+        </div>
+        <p>I'm a multimedia graphic designer who’s passionate about human-centered design. I have experience in print, company branding, and digital media. My curiosity of skill sets leads me in unexpected places, such as the realms of animation and basic programming. You can explore my work on my website, where I bring many ideas to life—from employer and client projects to my own personal projects.</p>
+        <div class="list-container">
+          <div>
+            <h2>Experience</h2>
+            <p><br><br><span class="xb">Graphic Design Intern</span><br>
+              Miami University Communications and Marketing, Oxford OH<br>
+              <span class="xi">3/2024–Present</span><br>‎
+            </p>
+            <ul>
+              <li>Consulted client design requests to uphold university’s brand guidelines to ensure unified branding across departments</li>
+              <li>Worked cross-functionally with designers to collaborate on a variety of project disciplines and sizes</li>
+              <li>Revamped a 30,000+ icon library with a python script to succinctly organize a design database for future users, ultimately saving the university $20k</li>
+            </ul>
+            <p><br><br><span class="xb">Graphic Design and Website Management Intern</span><br>
+              Richard and Carole Cocks Art Museum, Oxford OH<br>
+              <span class="xi">8/2023–Present</span><br>‎
+            </p>
+            <ul>
+              <li>Designed all printed material and social media templates for multiple exhibitions to strengthen the museum’s theming and brand</li>
+              <li>Organized and updated Art Museum multiple web pages to improve visual harmony and clarity</li>
+              <li>Made motion graphics for event that increased engagement by 50%</li>
+            </ul>
+            <p><br><br><span class="xb">Freelance Artist</span><br>
+              Self-started, Remote<br>
+              <span class="xi">8/2023–8/2024</span><br>‎
+            </p>
+            <ul>
+              <li>Completed 100+ commissions with over 70+ unique customers</li>
+              <li>Initiated side business by creating profile pictures, avatars, banners, and digital stickers</li>
+              <li>Maintained a high client return rate through personalized consultations, design knowledge, and strong communication skills</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2>Hard Skills <br><br>‎</h2>
+            <ul>
+              <li>Adobe Suite <br><span class="xi">Illustrator, Indesign, Photoshop, After Effects, Premiere Pro</span></li>
+              <li>Microsoft Office<br><span class="xi">Excel, Powerpoint, Word</span></li>
+              <li>Google Apps<br><span class="xi">Sheets, Slides, Docs</span></li>
+              <li>Other<br><span class="xi">Canva, Figma, Blender, HTML, CSS, JS</span></li>
+            </ul>
+            <h2><br><br>Extra Curriculars <br><br>‎</h2>
+            <ul>
+              <li>Teacher’s Assistant for a Miami University Adobe class<br><span class="xi">8/2023–5/2024</span></li>
+              <li>Speaker at National Civil Rights Conference and Reimagining the Academy<br><span class="xi">10/2023</span></li>
+              <li>Volunteer at Oxford Farmer’s Market<br><span class="xi">Present</span></li>
+              <li>Volunteer and designer for the Electric Root Festival<br><span class="xi">5/2024</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="button-container">
+          <a href="contact.html"><p class="button">Contact Me</p></a>
+          <a href="/portfolio/assetsWeb/shuppert-FA24-Resume-v5.pdf"><p class="button">View Resume</p></a>
+        </div>
+      </div>
+      <img class="aboutImg" src="/portfolio/assetsWeb/david-shuppert-photo-JUNE-24.png"> 
+    </main>
+    <div id="footer"></div> 
+</body>
+</html>

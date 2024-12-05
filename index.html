@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/portfolio/main.css">
+    <title>David Shuppert</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Suez+One">
+
+    <script src="/portfolio/javascript.js"></script>
+    <script type = "text/javascript" src = "https://www.tutorialspoint.com/jquery/jquery-3.6.0.js"></script>
+    <script> 
+    $(function(){
+      $(".nav-container").load("/portfolio/elements/nav-main.html"); 
+    });
+    $(function(){
+      $("#footer").load("/portfolio/elements/footer.html"); 
+    });
+    $(function(){
+      $("#banner").load("/portfolio/elements/banner.html"); 
+    });
+    $(function(){
+      $(".05-erf").load("/portfolio/elements/carItems/i05-erf.html"); 
+    });
+    $(function(){
+      $(".02-ballAn").load("/portfolio/elements/carItems/i02-ballAn.html"); 
+    });
+    $(function(){
+      $(".01-bagProd").load("/portfolio/elements/carItems/i01-bagProd.html"); 
+    });
+    $(function(){
+      $(".07-teacup").load("/portfolio/elements/carItems/i07-teacup.html"); 
+    });
+    $(function(){
+      $(".03-bgd").load("/portfolio/elements/carItems/i03-bgd.html"); 
+    });
+    $(function(){
+      $(".08-yield").load("/portfolio/elements/carItems/i08-yield.html"); 
+    });
+    $(function(){
+      $(".06-rccam").load("/portfolio/elements/carItems/i06-rccam.html"); 
+    });
+    $(function(){
+      $(".04-eclipse").load("/portfolio/elements/carItems/i04-eclipse.html"); 
+    });
+    </script>
+</head>
+<body>
+    <div class="nav-container"></div>
+    <div id="banner"></div>
+    <main>
+      <div class="textBox">
+        <h1>There's <span class="color-changing">16.8 million</span> colors</h1>
+        <h1>Let's use them</h1>
+      </div>
+      <div class="textBox">
+        <br>
+        <div class="grid">
+
+          <div class="04-eclipse"></div>
+          <div class="06-rccam"></div>
+          <div class="05-erf"></div>
+          <div class="01-bagProd"></div>
+          <div class="02-ballAn"></div>
+          <div class="07-teacup"></div>
+          <div class="03-bgd"></div>
+          <div class="08-yield"></div>
+          
+        </div>
+      </div>  
+    </main>
+    <div id="footer"></div>
+</body>
+</html>
